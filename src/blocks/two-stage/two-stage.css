@@ -1,0 +1,32 @@
+.two-stage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.two-stage__image{
+    height: 300px;
+    width: 350px;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+}
+.two-stage__image:active{
+    transform: scale(0.9);
+}
+.two-stage_deactivated{
+    display: none;
+}
+.two-stage__text{
+    font-size: 12px;
+    color: #888888;
+}
+
+.third-stage__image{
+    z-index: -1;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.third-stage_deactivated{
+    display: none;
+}

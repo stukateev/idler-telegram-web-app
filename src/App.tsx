@@ -1,7 +1,5 @@
 import {useEffect, useState} from 'react'
-import reactLogo from './assets/react.svg'
 
-import viteLogo from '/vite.svg'
 import citIcon from './assets/pngwing.com (2).png'
 import negrIcon from './assets/22a22711fec7a9fb1ab7467f4fc1f52213f84a6a.jpeg'
 
@@ -18,7 +16,7 @@ function App() {
             .then(data => setIPAddress(data.ip))
             .catch(error => console.log(error))
     }, []);
-    const twoStageText = {4:"Кликни по киту", 3:"Давай ещё", 2:"Молодец, продолжай", 1:"Последний раз", 0:"Красаучег",}
+    const twoStageText = ["Красаучег", "Последний раз", "Молодец, продолжай", "Давай ещё", "Кликни по киту"]
     return (
         <>
             <div className={` ${count<=0 ? "main_deactivated" : "main"}`}>
